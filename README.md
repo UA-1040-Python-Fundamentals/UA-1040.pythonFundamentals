@@ -1,7 +1,7 @@
 # UA-1040.pythonFundamentals
 
 0. @lhalam - Liubomyr Halamaha :)
-1. @Alexander0108
+1. @Alexander0108 - ^_^
 2. @AlphanumericUser01
 3. @antonnn97
 4. @AnyKlymchuk
