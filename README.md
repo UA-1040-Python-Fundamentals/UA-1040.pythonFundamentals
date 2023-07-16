@@ -12,7 +12,7 @@
 9. @HolfameP
 10. @kozlovvladimir
 11. @MischaPerehinchuk
-12. @NataliiaKostyk
+12. @NataliiaKostyk Nataliia Kostyk
 13. @Petrivskyi23
 14. @Pilatkz
 15. @rynaray
