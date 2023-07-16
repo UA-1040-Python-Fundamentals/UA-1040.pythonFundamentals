@@ -6,7 +6,7 @@
 3. @antonnn97
 4. @AnyKlymchuk
 5. @Col1egS
-6. @ConstantinKobzar
+6. @ConstantinKobzar Костянтин Кобзар
 7. @DmitryMatrenin
 8. @Dmytro31
 9. @HolfameP
