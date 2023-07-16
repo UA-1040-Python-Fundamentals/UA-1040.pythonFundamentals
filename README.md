@@ -13,7 +13,7 @@
 10. @kozlovvladimir
 11. @MischaPerehinchuk
 12. @NataliiaKostyk
-13. @Petrivskyi23
+13. @Petrivskyi23 - Vasyl Petrivskyi
 14. @Pilatkz
 15. @rynaray
 16. @shtefan1903
