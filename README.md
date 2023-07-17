@@ -13,7 +13,7 @@
 10. @kozlovvladimir
 11. @MischaPerehinchuk
 12. @NataliiaKostyk
-13. @Petrivskyi23
+13. @Petrivskyi23 - Vasyl Petrivskyi
 14. @Pilatkz
 15. @rynaray
 16. @shtefan1903
@@ -22,3 +22,6 @@
 19. @TechPriest2187
 20. @Yelniko
 21. @yuriisymchych
+22. @lINazarIl
+23. @RudychukDmytro
+24. A-ProgLang
