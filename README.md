@@ -23,4 +23,4 @@
 20. @Yelniko
 21. @yuriisymchych
 22. @lINazarIl
-23. @RudychukDmytro
+23. @RudychukDmytro - Dmytro Rudychuk
