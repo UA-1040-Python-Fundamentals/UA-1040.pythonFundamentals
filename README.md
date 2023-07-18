@@ -5,7 +5,7 @@
 2. @AlphanumericUser01
 3. @antonnn97
 4. @AnyKlymchuk
-5. @Col1egS
+5. @Col1egS - Oleh Ivanytskyi
 6. @ConstantinKobzar Костянтин Кобзар
 7. @DmitryMatrenin
 8. @Dmytro31
@@ -24,4 +24,4 @@
 21. @yuriisymchych
 22. @lINazarIl
 23. @RudychukDmytro - Dmytro Rudychuk
-24. A-ProgLang
+24. @A-ProgLang
