@@ -20,7 +20,7 @@
 17. @sirskyibIT
 18. @skarfacedd
 19. @TechPriest2187
-20. @Yelniko
+20. @Yelniko - Yelnikov Oleh
 21. @yuriisymchych
 22. @lINazarIl
 23. @RudychukDmytro
