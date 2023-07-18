@@ -23,5 +23,5 @@
 20. @Yelniko - Yelnikov Oleh
 21. @yuriisymchych
 22. @lINazarIl
-23. @RudychukDmytro
+23. @RudychukDmytro - Dmytro Rudychuk
 24. A-ProgLang
