@@ -1,12 +1,12 @@
 # UA-1040.pythonFundamentals
 
 0. @lhalam - Liubomyr Halamaha :)
-1. @Alexander0108
+1. @Alexander0108 - Alexander Dermanskiy ^_^
 2. @AlphanumericUser01
 3. @antonnn97
 4. @AnyKlymchuk
 5. @Col1egS
-6. @ConstantinKobzar
+6. @ConstantinKobzar Костянтин Кобзар
 7. @DmitryMatrenin
 8. @Dmytro31
 9. @HolfameP
@@ -20,7 +20,8 @@
 17. @sirskyibIT
 18. @skarfacedd
 19. @TechPriest2187
-20. @Yelniko
+20. @Yelniko - Yelnikov Oleh
 21. @yuriisymchych
 22. @lINazarIl
 23. @RudychukDmytro - Dmytro Rudychuk
+24. A-ProgLang
