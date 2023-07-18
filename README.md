@@ -18,7 +18,7 @@
 15. @rynaray
 16. @shtefan1903
 17. @sirskyibIT
-18. @skarfacedd
+18. @skarfacedd - Oleh Nadvirnianskyi
 19. @TechPriest2187
 20. @Yelniko - Yelnikov Oleh
 21. @yuriisymchych
