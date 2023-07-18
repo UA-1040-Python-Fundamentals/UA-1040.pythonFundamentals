@@ -2,7 +2,7 @@
 
 0. @lhalam - Liubomyr Halamaha :)
 1. @Alexander0108
-2. @AlphanumericUser01
+2. @AlphanumericUser01 - Maksym Derkach
 3. @antonnn97
 4. @AnyKlymchuk
 5. @Col1egS
