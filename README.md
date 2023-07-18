@@ -8,7 +8,7 @@
 5. @Col1egS
 6. @ConstantinKobzar
 7. @DmitryMatrenin
-8. @Dmytro31
+8. @Dmytro31 Fedoruk Dmutro
 9. @HolfameP
 10. @kozlovvladimir
 11. @MischaPerehinchuk
