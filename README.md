@@ -1,4 +1,4 @@
-# UA-1040.pythonFundamentals
+gi# UA-1040.pythonFundamentals
 
 0. @lhalam - Liubomyr Halamaha :)
 1. @Alexander0108 - Alexander Dermanskiy ^_^
