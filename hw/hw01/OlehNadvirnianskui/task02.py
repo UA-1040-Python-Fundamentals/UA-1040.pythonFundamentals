@@ -1,9 +1,0 @@
-a= int(input("Enter firt number:"))
-b= int(input("Enter second number:"))
-print("A + B =", a+b,
-        "\nA - B =",a-b,
-        "\nA * B =", a*b,
-        "\nA / B =", a/b ,
-        "\nA**B =", a**b  ,
-        "\nA//B =",a//b   ,
-        "\nA%B =", a%b )
