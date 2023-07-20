@@ -15,7 +15,7 @@
 12. @NataliiaKostyk
 13. @Petrivskyi23 - Vasyl Petrivskyi
 14. @Pilatkz
-15. @rynaray
+15. @rynaray - Kateryna Luchynska
 16. @shtefan1903
 17. @sirskyibIT
 18. @skarfacedd
