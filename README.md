@@ -19,7 +19,7 @@
 16. @shtefan1903
 17. @sirskyibIT - Bohdan Sirskyi
 18. @skarfacedd - Oleh Nadvirnianskyi
-19. @TechPriest2187
+19. @TechPriest2187 - Karabyn Nazar:)
 20. @Yelniko - Yelnikov Oleh
 21. @yuriisymchych
 22. @lINazarIl
