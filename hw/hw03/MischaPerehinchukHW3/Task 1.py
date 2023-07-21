@@ -1,4 +1,4 @@
-#Task №1
+#Taskg №1
 
 the_zen_of_python = """Гарне краще за потворне.
 Очевидне краще за неочевидне.
@@ -32,3 +32,4 @@ print(перетворення)
 
 the_zen_of_python_replace = the_zen_of_python.replace("і" , "&")
 print(the_zen_of_python_replace)
+
