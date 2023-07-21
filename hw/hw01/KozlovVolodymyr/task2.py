@@ -1,0 +1,10 @@
+number_A = float(input('enter number A\n'))
+number_B = float(input('enter number B\n'))
+
+print(number_A+number_B)
+print(number_A-number_B)
+print(number_A*number_B)
+print(number_A/number_B)
+print(number_A**number_B)
+print(number_A//number_B)
+print(number_A % number_B)

@@ -10,7 +10,7 @@
 7. @DmitryMatrenin
 8. @Dmytro31
 9. @HolfameP - Sviatoslav Brahin 
-10. @kozlovvladimir
+10. @kozlovvladimir - Kozlov Volodymyr
 11. @MischaPerehinchuk
 12. @NataliiaKostyk Nataliia Kostyk
 13. @Petrivskyi23 - Vasyl Petrivskyi
