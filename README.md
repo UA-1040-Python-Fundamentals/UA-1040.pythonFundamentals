@@ -24,7 +24,7 @@
 19. @TechPriest2187 - Karabyn Nazar:)
 20. @Yelniko - Yelnikov Oleh
 21. @yuriisymchych
-22. @lINazarIl
+22. @lINazarIl - Nazar Halii
 23. @RudychukDmytro - Dmytro Rudychuk
 24. @A-ProgLang
 25. DaniilDolobashko
