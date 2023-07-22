@@ -20,6 +20,5 @@ Namespaces are one honking great idea -- let's do more of those!
 """
 
 print(text.find('better'),text.find('never'),text.find('is'))
-
 print(text.upper())
 print(text.replace('i', '&'))
