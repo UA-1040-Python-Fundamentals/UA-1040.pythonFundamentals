@@ -26,5 +26,5 @@
 21. @yuriisymchych
 22. @lINazarIl - Nazar Halii
 23. @RudychukDmytro - Dmytro Rudychuk
-24. @A-ProgLang
+24. @A-ProgLang - Artem Snisarenko
 25. @DaniilDolobashko - Daniil Dolobashko
