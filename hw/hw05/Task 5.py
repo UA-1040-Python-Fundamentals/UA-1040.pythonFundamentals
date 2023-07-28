@@ -1,9 +1,10 @@
 # Task 5.1
+print("Завдання 5.1")
 list = [float(number) for number in range(15)]
 print(list)
 
 # Task 5.2
-
+print("Завдання 5.2")
 n = int(input("Введіть число до якого хочете порахувати число Фібоначі: "))
 
 n1 = 0
@@ -15,3 +16,17 @@ for i in range(n):
     else:
         print(n1)
         n1, n2 = n2, n1 + n2
+
+# Task 5.3
+print("Завдання 5.3")
+
+while True:
+    fact = 1
+    try:
+        n = int(input("Введіть число до якого хочете порахувати факторіал: "))
+        for i in range(1, n+1):
+            fact *= i
+        print(f"Факторіал числа {n} = {fact}")
+        break
+    except Exception as error:
+        print("Помилка: ", error)
