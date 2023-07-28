@@ -22,11 +22,11 @@ print("Завдання 5.3")
 
 while True:
     fact = 1
-    n = int(input("Введіть число до якого хочете порахувати факторіал: "))
     try:
+        n = int(input("Введіть число до якого хочете порахувати факторіал: "))
         for i in range(1, n+1):
             fact *= i
         print(f"Факторіал числа {n} = {fact}")
         break
-    except ValueError:
-        print("Значення перевищує довжину у 4300 символів")
+    except Exception as error:
+        print("Помилка: ", error)
