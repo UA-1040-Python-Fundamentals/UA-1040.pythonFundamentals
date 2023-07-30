@@ -14,11 +14,7 @@
 9. @HolfameP - Sviatoslav Brahin 
 10. @kozlovvladimir - Kozlov Volodymyr
 11. @MischaPerehinchuk
-<<<<<<< HEAD
-12. @NataliiaKostyk
-=======
 12. @NataliiaKostyk Nataliia Kostyk
->>>>>>> 686b95ffa78f60871f62e052e10db920723fa6f7
 13. @Petrivskyi23 - Vasyl Petrivskyi
 14. @Pilatkz
 15. @rynaray - Kateryna Luchynska
