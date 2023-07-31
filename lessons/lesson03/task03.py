@@ -38,15 +38,30 @@ mult = 1
 while natural_number != 0:
     mult = mult * (natural_number % 10)
     natural_number = natural_number // 10
-message = f"find the product of the digits of this number {mult}."
-print(message)
-
+print(f'find the product of the digits of this number: {mult}.')
 
 #Task2.2
 natural_number=int(5267)
-rev = natural_number[::-1]
-message = f"write the number in reverse order {rev}."
-print(message)
+natural_number=str(natural_number)
+rev=natural_number[::-1]
+rev =int(rev)
+print(f'write the number in reverse order: {rev}.')
+
+#Task2.3
+natural_number=int(5267)
+n_list=list(str(natural_number))
+n_list=sorted(n_list)
+r="".join(n_list)
+sort=int(r)
+print(f'in ascending order, you need to sort the numbers included in the given number: {sort}.')
+
+#Task3
+a=52
+b=67
+a,b = b,a
+print(f'Interchange the values of two variables without using the third variable.: variable a={a} and b={b}.')
+
+
 
 
 
