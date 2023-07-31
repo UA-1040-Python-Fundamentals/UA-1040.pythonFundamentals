@@ -1,5 +1,5 @@
 #Task1
-text="""Beautiful is better than ugly.
+text='''Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.
 Complex is better than complicated.
@@ -17,9 +17,44 @@ Now is better than never.
 Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let's do more of those!"""
+Namespaces are one honking great idea -- let's do more of those!'''
+
+#Task1.1
+print(text.count('better'))
+print(text.count('never'))
+print(text.count('is'))
 
 #Task1.2
-word = 'better'
-text.find(word)
+print(text.title())
+
+#Task1.3
+print(text.replace('i', '&'))
+
+#Task2
+natural_number=int(5267)
+
+#Task2.1
+mult = 1
+while natural_number != 0:
+    mult = mult * (natural_number % 10)
+    natural_number = natural_number // 10
+message = f"find the product of the digits of this number {mult}."
+print(message)
+
+
+#Task2.2
+natural_number=int(5267)
+rev = natural_number[::-1]
+message = f"write the number in reverse order {rev}."
+print(message)
+
+
+
+
+
+
+
+
+
+
 
