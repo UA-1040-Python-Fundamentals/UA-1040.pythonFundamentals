@@ -21,7 +21,7 @@
 18. @skarfacedd - Oleh Nadvirnianskyi
 19. @TechPriest2187 - Karabyn Nazar:)
 20. @Yelniko - Yelnikov Oleh
-21. @yuriisymchych
+21. @yuriisymchych - Yurii Symchych
 22. @lINazarIl - Nazar Halii
 23. @RudychukDmytro - Dmytro Rudychuk
 24. @A-ProgLang - Artem Snisarenko
