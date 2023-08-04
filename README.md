@@ -9,8 +9,6 @@
 6. @ConstantinKobzar Костянтин Кобзар
 7. @DmitryMatrenin
 8. @Dmytro31 Fedoruk Dmutro
-9. @HolfameP
-8. @Dmytro31
 9. @HolfameP - Sviatoslav Brahin 
 10. @kozlovvladimir - Kozlov Volodymyr
 11. @MischaPerehinchuk
