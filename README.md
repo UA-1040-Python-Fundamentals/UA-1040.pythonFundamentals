@@ -14,7 +14,7 @@
 11. @MischaPerehinchuk
 12. @NataliiaKostyk Nataliia Kostyk
 13. @Petrivskyi23 - Vasyl Petrivskyi
-14. @Pilatkz
+14. @Pilatkz - Kateryna Kuznietsova :3
 15. @rynaray - Kateryna Luchynska
 16. @shtefan1903
 17. @sirskyibIT - Bohdan Sirskyi
