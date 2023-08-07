@@ -6,4 +6,3 @@ elif celsius in range(-273,15):
     print(f"{celsius}°C is equivalent to {fahrenheit}°F")
 else:
     print(f"{celsius}°C is equivalent to {fahrenheit}°F")
-git
