@@ -42,7 +42,7 @@ l = (1, 2, 3, "4", (1, 2, 3), 5.4)
 #     print(element, element[0], element[1])
 # for index, value in enumerate(l):
 #     print(index, value)
-l = []
+l = [555555]
 # for i in range(10):
 #     value = input(f"enter {i} element: ")
 #     l.append(value)
