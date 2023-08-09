@@ -1,0 +1,27 @@
+def celsius_to_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+def main():
+    absolute_zero_celsius = -273.15
+
+    celsius_input = float(input("Enter the temperature in Celsius: "))
+
+    if celsius_input < absolute_zero_celsius:
+        print(f"Error: Temperature below absolute zero ({absolute_zero_celsius}°C)")
+    else:
+        fahrenheit_output = celsius_to_fahrenheit(celsius_input)
+        print(f"{celsius_input:.2f}°C is equivalent to {fahrenheit_output:.2f}°F")
+
+        if celsius_input < 7:
+            print("Dress Warmly! It's cold enough!!!")
+
+        if celsius_input  > 6 and celsius_input < 14:
+            print("Today is a good weather, but isn't warm enough!")
+
+        if celsius_input > 13 and < 18:
+            print("Today is warm!")
+
+        if celsius_input > 17:
+            print("Today is warm enough!")
+
+if __name__ == "__main__":
+    main()
