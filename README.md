@@ -3,12 +3,12 @@
 0. @lhalam - Liubomyr Halamaha :)
 1. @Alexander0108 - Alexander Dermanskiy ^_^
 2. @AlphanumericUser01 - Maksym Derkach
-3. @antonnn97 - Anton Savka 
+3. @antonnn97 - Anton Savka
 4. @AnyKlymchuk
 5. @Col1egS - Oleh Ivanytskyi
 6. @ConstantinKobzar Костянтин Кобзар
 7. @DmitryMatrenin
-8. @Dmytro31 Fedoruk Dmutro
+8. @Dmytro31 Fedoruk Dmutro)
 9. @HolfameP - Sviatoslav Brahin 
 10. @kozlovvladimir - Kozlov Volodymyr
 11. @MischaPerehinchuk - Mischa Perehinchuk;)
@@ -25,4 +25,4 @@
 22. @lINazarIl - Nazar Halii
 23. @RudychukDmytro - Dmytro Rudychuk
 24. @A-ProgLang - Artem Snisarenko
-25. @DaniilDolobashko - Daniil Dolobashko
+25. DaniilDolobashko - Daniil Dolobashko
