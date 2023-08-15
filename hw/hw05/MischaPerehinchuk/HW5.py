@@ -30,11 +30,12 @@ print("End")
 # HW-05.3
 
 n = int(input("Enter the number: "))
-if n < 0:
-    print("Factorial 0 is not defined")
+if n < -1:
+    print("Factorial is not defined")
 else:
     factorial = 1
     for i in range(1, n + 1):
         factorial *= i
 
     print(f"{n}! = {factorial}")
+
