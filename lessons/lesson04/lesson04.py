@@ -135,6 +135,7 @@ match a:
     case 3:
         print("===")
     case _:
+        pass
 # def f1(a,b):
 #     return a+b
 # def f2(a,b):
