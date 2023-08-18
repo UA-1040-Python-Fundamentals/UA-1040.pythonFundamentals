@@ -97,8 +97,8 @@
 # print_cv( 19, "Anrii")
 
 
-def print_cv(name, age, phone="+38"):
-    print(f"{name=} {age=} phone=+{int(phone)}")
+# def print_cv(name, age, phone="+38"):
+#     print(f"{name=} {age=} phone=+{int(phone)}")
 
 
 #
@@ -258,47 +258,130 @@ def print_cv(name, age, phone="+38"):
 #     print(l)
 #
 # f()
-def fun():
-    count = 0
+# def fun():
+#     count = 0
+#
+#     def my_f(*args):
+#         nonlocal count
+#         count += 1
+#         print(f"function run: {count}")
+#         return sum(args)
+#
+#     return my_f
+#
+#
+# f = fun()
+# print(id(f))
+# f2 = fun()
+# print(id(f2))
+# # print(f(1,2,34,54))
+# # print(f2(1,2,34,54, 55))
+# # print(f(1,2,34,54, 55))
+# # print(f(1,2,34,54, 55))
+# # print(f2(1,2,34,54, 55))
+# count = 0
+#
+#
+# def my_f(*args):
+#     global count
+#     count += 1
+#     print(f"function run: {count}")
+#     return sum(args)
+#
+#
+# def fun():
+#     return my_f
+#
+#
+# f = fun()
+# print(id(f))
+# f2 = fun()
+# print(id(f2))
+# print(f(1, 2, 34, 54))
+# print(f2(1, 2, 34, 54, 55))
+# print(f(1, 2, 34, 54, 55))
+# print(f(1, 2, 34, 54, 55))
+# print(f2(1, 2, 34, 54, 55))
 
-    def my_f(*args):
-        nonlocal count
-        count += 1
-        print(f"function run: {count}")
-        return sum(args)
+# import sys
+# sys.setrecursionlimit(2000)
+# def rec(in_param):
+#     print(in_param)
+#     rec(in_param+1)
+# rec(1)
 
-    return my_f
+# d = {
+#     "a": 1,
+#     "b": {
+#         "x": 1,
+#         "y": 2,
+#         "dd": {
+#             "a": 1,
+#             "b": {
+#                 "x": 1,
+#                 "y": 2
+#             },
+#             "c": [1, 2, 3, [4, 5], 6]
+#         }
+#     },
+#     "c": [1, 2, 3, [4, 5], 6]
+# }
+# print(d)
+
+# def print_dict(d, h=1):
+#     print("\t" * (h - 1 if h < 2 else 0) + "{")
+#     for key, value in d.items():
+#         if type(value) is dict:
+#             print("\t" * h + f"{key}:", end=" ")
+#             print_dict(value, h + 1)
+#         else:
+#             print("\t" * h + f"{key}:{d[key]}")
+#     print("\t" * (h - 1) + "}")
+#
+#
+# print_dict(d)
+#
+# lambda x: x ** x
+# my_f = lambda x: x ** x;
+# print("test")
+# print("end")
+# print(my_f(22))
+# my_f = lambda x, y: x ** y;
+# print(my_f(22, 2))
+#
+#
+# l = [2, 5, 2, 3, 67, 8, 3, 54, 7]
+# print(sorted(l))
+l = [2, 5, "2", 3, "67", 8, 3, "54", 7]
+#
+#
+# def to_int(element):
+#     return int(element)
+#
+#
+# print(sorted(l, key=to_int))
+# print([bin(int(x)).zfill(4) for i in l])
+# print(sorted(l, key=lambda x: bin(int(x)).zfill(4)[:4]))
+# print(sorted(l, key=bin(int(x)).zfill(4)[:4]))
+print(sorted(l, key=int))
 
 
-f = fun()
-print(id(f))
-f2 = fun()
-print(id(f2))
-# print(f(1,2,34,54))
-# print(f2(1,2,34,54, 55))
-# print(f(1,2,34,54, 55))
-# print(f(1,2,34,54, 55))
-# print(f2(1,2,34,54, 55))
-count = 0
-
-
-def my_f(*args):
-    global count
-    count += 1
-    print(f"function run: {count}")
-    return sum(args)
-
-
-def fun():
-    return my_f
-
-
-f = fun()
-print(id(f))
-f2 = fun()
-print(id(f2))
-print(f(1, 2, 34, 54))
-print(f2(1, 2, 34, 54, 55))
-print(f(1, 2, 34, 54, 55))
-print(f(1, 2, 34, 54, 55))
-print(f2(1, 2, 34, 54, 55))
+# def my_sort(l, key=None):
+#
+#     for i in range(len(l)-1):
+#         for x in range(i+1, len(l)):
+#             e1 = l[i]
+#             e2 = l[x]
+#             if not key:
+#                 e1 = key(e1)
+#                 e2 = key(e2)
+#             if e1 > e2:
+#                 # l[i], l[x] = l[x], l[i]
+#                 t = l[i]
+#                 l[i] = l[x]
+#                 l[x] = t
+#     return l
+#
+# l = [2, 5, 2, 7]
+#
+# my_sort(l)
