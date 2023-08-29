@@ -1,4 +1,7 @@
 def largest_num(num1, num2):
+    """
+    This function takes 2 numbers and find largest of them
+    """
     return max([num1, num2])
 
 def main():
