@@ -204,24 +204,106 @@ p = [{"name": "name1", "age": 15, "sex": "m"},
 # MyClass.print_class()
 # m.print_static()
 
-class MyClass:
-    # pass
-    def __init__(self,a,b,c):
-        self.x = a
-        self._x = b
-        self.__x = c
-    def __str__(self):
-        return f"{self.x=} {self._x=} {self.__x=}"
-y = MyClass(1,2,3)
-y = MyClass(1,2,3)
-y = MyClass(1,2,3)
-y = MyClass(1,2,3)
+# class MyClass:
+#     # pass
+#     def __init__(self,a,b,c):
+#         self.x = a
+#         self._x = b
+#         self.__x = c
+#     def __str__(self):
+#         return f"{self.x=} {self._x=} {self.__x=}"
+# y = MyClass(1,2,3)
+# y = MyClass(1,2,3)
+# y = MyClass(1,2,3)
+# y = MyClass(1,2,3)
+#
+#
+# print(y, y.__dict__)
+# # print(y)
+# # print(y.x)
+# # print(y._x)
+# # # print(y.__x)
+# # print(y._MyClass__x)
+class PointError(Exception):
+    pass
+class Point:
+    def __init__(self, x=0, y=0):
+        self.__x = x
+        self.__y = y
+
+    def __repr__(self):
+        return f"({self.__x}, {self.__y})"
+
+    def print(self):
+        print(self, type(self))
+
+    def __add__(self, other):
+        p = Point()
+        p.x = self.__x + other.__x
+        p.y = self.__y + other.__y
+        return p
+
+    def add(self, other):
+        p = Point()
+        p.__x = self.__x + other.__x
+        p.__y = self.__y + other.__y
+        return p
+
+    def __lt__(self, other):
+        return self.__x + self.__y < other.__x + other.__y
+
+    # def __get_x(self):
+    #     print("get_x")
+    #     return self.__x
+    #
+    # def __set_x(self, x):
+    #     print("set_x", x)
+    #     self.__x = x
+    #
+    # x = property(__get_x, __set_x)
+    @property
+    def x(self):
+        print("get_x")
+        return self.__x
+
+    @x.setter
+    def x(self, x):
+        print("set_x", x)
+        if type(x) is int:
+            self.__x = x
+        else:
+            raise PointError()
+    @property
+    def y(self):
+        print("get_y")
+        return self.__y
+
+    @y.setter
+    def y(self, y):
+
+        print("set_y", y)
+        if type(y) is int:
+            self.__y = y
+        else:
+            raise ZeroDivisionError("aaa")
+    def get_info(self):
+        pass
+
+    getinfo = property(get_info)
 
 
-print(y, y.__dict__)
-# print(y)
-# print(y.x)
-# print(y._x)
-# # print(y.__x)
-# print(y._MyClass__x)
+p = Point(15, 22)
+# print(p)
+# print(p.get_x())
+# p.set_x(99)
+# print(p)
+# print(p.x)
+# p.x = 888
+print(p)
+p.y = "aa"
+p.x = "aa"
+print(p.y)
+print(Point.getinfo)
+print(Point.x)
+
 
