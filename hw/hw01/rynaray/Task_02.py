@@ -1,0 +1,16 @@
+print('Put the first number, please: ')
+a = input('A equals: ')
+print('Put the second number, please: ')
+b = input('B equals: ')
+
+int_a = int(a)
+int_b = int(b)
+
+print('The result of calculating your numbers is: ')
+print('A + B = ', int_a + int_b)
+print('A - B = ', int_a - int_b)
+print('A * B = ', int_a * int_b)
+print('A / B = ', int_a / int_b)
+print('A ** B = ', int_a ** int_b)
+print('A // B = ', int_a // int_b)
+print('A % B = ', int_a % int_b)
