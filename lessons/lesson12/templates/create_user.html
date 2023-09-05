@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="POST" action={{ url_for('create_user') }}>
+        <label> Name: <input type="text" name="username"> </label>
+        <label> Age: <input type="number" name="age"></label>
+        <label> Sex: <input type="text" name="sex"></label>
+        <input type="submit" >
+    </form>
+</body>
+</html>
