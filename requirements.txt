@@ -8,3 +8,5 @@ platformdirs==3.10.0
 pylint==2.17.5
 tomlkit==0.12.1
 wrapt==1.15.0
+
+pygame~=2.5.1
