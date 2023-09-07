@@ -1,4 +1,12 @@
 #------------------------ Task 8.1 ------------------------
+from utils import *
+from models import *
+
+print(list(filter(lambda str: not ("__" in str), dir())))
+
+
+
+#------------------------ Task 8.2 ------------------------
 
 def correct_pass():
     import re
@@ -38,7 +46,7 @@ def correct_pass():
 
 correct_pass()
 
-#------------------------ Task 8.2 ------------------------
+#------------------------ Task 8.3 ------------------------
 
 from math import pi, pow
 
