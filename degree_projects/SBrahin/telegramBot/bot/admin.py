@@ -57,7 +57,7 @@ async def generate_image(msg: Message):
     if len(img_res) == 0:
         return await mesg.edit_text(text.gen_error, reply_markup=kb.iexit_kb)
     await mesg.delete()
-    await mesg.answer_photo(photo=img_res[0], caption=text.img_watermark)
+    await mesg.answer_photo(photo=img_res[0], caption=text.img_watermark, reply_markup=kb.exit_kb)
 
 #Генерування оплати
 @router.callback_query(F.data == "buy_tokens")
