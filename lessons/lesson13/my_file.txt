@@ -1,0 +1,1 @@
+<function my_log.<locals>.inner at 0x0000021488EFB560> ((3, 78), (5, -5), (8, 73), (13, 68)) {}<function my_log.<locals>.inner at 0x0000025EB3F6B4C0> ((3, 78), (5, -5), (8, 73), (13, 68)) {}
