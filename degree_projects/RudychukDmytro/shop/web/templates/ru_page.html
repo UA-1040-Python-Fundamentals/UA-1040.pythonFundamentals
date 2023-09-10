@@ -1,0 +1,48 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5;URL='/en/'">
+    <title>Redirecting...</title>
+    <style>
+        #ru_page {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        #ru_page .blue_section {
+            background-color: blue;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #ru_page .yellow_section {
+            background-color: yellow;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #ru_page h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="ru_page">
+    <div class="blue_section">
+        <div><h2>Обираєш російську?</h2></div>
+        <div><h1>Твоя байдужість - вбиває!</h1></div>
+    </div>
+    <div class="yellow_section">
+        <h1>Слава Україні!</h1>
+    </div>
+</div>
+</body>
+</html>
