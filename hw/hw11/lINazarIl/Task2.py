@@ -1,3 +1,5 @@
+import calendar
+
 def continue_prgm_quest():
     choice = input('Continue program Y/N: ')
     while not choice.lower() in ['y', 'n']:
@@ -8,24 +10,20 @@ def continue_prgm_quest():
 
     return True
 
-class NegativeAge(Exception):
-    pass
+days_of_week = {1: 'Monday', 2: 'Tuesday', 3: 'Wednessday', 4: 'Thursday', 5: 'Friday', 6: 'Saturday', 7: 'Sunday'}
 
 def main():
     while True:
         try:
-            age = int(input('Enter age: '))
-            if age < 0:
-                raise NegativeAge
+            num = int(input('Please enter number: '))
+            print(days_of_week[num])
 
-            if age % 2:
-                print('Age odd')
-            else:
-                print('Age even')
-        except NegativeAge:
-            print('Entered age are negative')
         except ValueError:
-            print('Incorrect input')
+            print('Incorrect value')
+
+        except KeyError:
+            print('Num out of range')
+
 
         if not continue_prgm_quest():
             print('Good bye.')
