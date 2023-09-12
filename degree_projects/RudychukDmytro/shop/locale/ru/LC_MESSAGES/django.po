@@ -1,0 +1,202 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-17 18:44+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
+"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
+"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
+"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#: accounts/templates/login.html:10 accounts/templates/login.html:29
+msgid "Login in"
+msgstr "Вход на сайт"
+
+#: accounts/templates/login.html:12
+msgid "You don't know the password?"
+msgstr "Забыли пароль?"
+
+#: accounts/templates/login.html:12 web/templates/shop/base.html:41
+msgid "Change password"
+msgstr "Сменить пароль"
+
+#: accounts/templates/registration.html:12
+#: accounts/templates/registration.html:31 web/templates/shop/base.html:46
+msgid "Registration"
+msgstr "Регистрация"
+
+#: accounts/templates/registration.html:14
+msgid "You have an account?"
+msgstr "Уже регистрировались?"
+
+#: accounts/templates/registration.html:14 web/templates/shop/base.html:47
+msgid "Log in"
+msgstr "Вход"
+
+#: cart/templates/cart/detail.html:5 cart/templates/cart/detail.html:8
+#: web/templates/shop/product/list.html:12
+#: web/templates/shop/product/list.html:22
+msgid "All products"
+msgstr "Все товары"
+
+#: cart/templates/cart/detail.html:12
+msgid "Image"
+msgstr "Изображение"
+
+#: cart/templates/cart/detail.html:13
+msgid "Name"
+msgstr "Название"
+
+#: cart/templates/cart/detail.html:14
+msgid "Update quantity"
+msgstr "Обновить количество"
+
+#: cart/templates/cart/detail.html:15 cart/templates/cart/detail.html:40
+msgid "Remove"
+msgstr "Удалить"
+
+#: cart/templates/cart/detail.html:16
+msgid "Quantity"
+msgstr "Количество"
+
+#: cart/templates/cart/detail.html:17
+msgid "Price for"
+msgstr "Цена за"
+
+#: cart/templates/cart/detail.html:18
+msgid "Unit"
+msgstr "Еденица измерения"
+
+#: cart/templates/cart/detail.html:19
+msgid "The total cost"
+msgstr "Общая стоимость"
+
+#: cart/templates/cart/detail.html:36
+msgid "Update"
+msgstr "Обновить"
+
+#: cart/templates/cart/detail.html:44 cart/templates/cart/detail.html:56
+#: cart/templates/cart/detail.html:63 web/templates/shop/base.html:57
+msgid "uah"
+msgstr "грн"
+
+#: cart/templates/cart/detail.html:48 cart/templates/cart/detail.html:50
+#: cart/templates/cart/detail.html:52 web/templates/shop/product/detail.html:17
+#: web/templates/shop/product/detail.html:19
+#: web/templates/shop/product/detail.html:21
+#: web/templates/shop/product/list.html:31
+msgid "UAH for"
+msgstr "грн за"
+
+#: cart/templates/cart/detail.html:48 web/templates/shop/product/detail.html:17
+msgid "kg"
+msgstr "кг"
+
+#: cart/templates/cart/detail.html:50 web/templates/shop/product/detail.html:19
+msgid "g"
+msgstr "г"
+
+#: cart/templates/cart/detail.html:52 web/templates/shop/product/detail.html:21
+msgid "pcs"
+msgstr "ед"
+
+#: cart/templates/cart/detail.html:61
+msgid "Total"
+msgstr "Вместе"
+
+#: cart/templates/cart/detail.html:68
+msgid "To the store"
+msgstr "В магазин"
+
+#: cart/templates/cart/detail.html:69
+msgid "To order"
+msgstr "Перейти к оформлению"
+
+#: web/templates/shop/base.html:31
+msgid "Search"
+msgstr "Поиск"
+
+#: web/templates/shop/base.html:38
+msgid "Order history"
+msgstr "История заказов"
+
+#: web/templates/shop/base.html:39
+msgid "Chosen"
+msgstr "Избраное"
+
+#: web/templates/shop/base.html:40
+msgid "Go out"
+msgstr "Выход"
+
+#: web/templates/shop/base.html:55
+msgid "In the shopping cart: "
+msgstr "В корзине товаров: "
+
+#: web/templates/shop/base.html:57
+msgid "qt, for the amount fo "
+msgstr "ед, на суму: "
+
+#: web/templates/shop/base.html:59
+msgid "The cart is empty"
+msgstr "Корзина пустая"
+
+#: web/templates/shop/product/detail.html:27
+msgid "Add to cart"
+msgstr "В корзину"
+
+#: web/templates/shop/product/list.html:9
+msgid "Category"
+msgstr "Категория"
+
+#: web/models.py:27
+msgid "name"
+msgstr "Название"
+
+#: web/models.py:28
+msgid "slug"
+msgstr "Слаг"
+
+#: web/models.py:31
+msgid "price"
+msgstr "Цена"
+
+#: web/models.py:37
+msgid "weight_unit"
+msgstr "Единица измерения"
+
+#: web/models.py:38
+msgid "available"
+msgstr "Наличие"
+
+#: web/models.py:39
+msgid "created"
+msgstr "Создан"
+
+#: web/models.py:40
+msgid "uploaded"
+msgstr "Обновлен"
+
+#: web/models.py:29
+#, fuzzy
+#| msgid "Image"
+msgid "image"
+msgstr "Изображение"
+
+#: web/models.py:32
+#, fuzzy
+#| msgid "weight_unit"
+msgid "weight"
+msgstr "Вес"

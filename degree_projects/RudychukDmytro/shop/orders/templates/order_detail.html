@@ -1,0 +1,28 @@
+{% extends "shop/base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+  <h1>{% trans 'Check' %} № {{ order.id }} </h1>
+  <p>{% trans 'Date' %}: {{ order.created }}</p>
+  <p>{% trans 'Total'%}: {{ order.get_total_cost }} {% trans 'uah' %}</p>
+  <p>{% trans 'List' %}:</p>
+ <ul>
+  {% for item in order.items.all %}
+    <li>
+      {{ item.product.name }} - {{ item.quantity }}
+
+      {% if item.product.weight_unit == "kg" %}
+        {% trans 'kg' %}
+      {% elif item.product.weight_unit == "g" %}
+        {% trans 'g' %}
+      {% elif item.product.weight_unit == "pcs" %}
+        {% trans 'pcs' %}
+      {% endif %}
+
+      x {{ item.price }} {% trans 'uah' %}
+    </li>
+  {% endfor %}
+</ul>
+
+{% endblock %}
