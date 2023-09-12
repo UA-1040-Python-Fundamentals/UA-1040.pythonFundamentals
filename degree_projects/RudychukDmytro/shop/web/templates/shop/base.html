@@ -1,0 +1,90 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>{% block title %}Мій магазин{% endblock %}</title>
+<link href="{% static "css/base.css" %}" rel="stylesheet">
+</head>
+<body>
+<div id="header">
+     <select onchange="location = this.value;">
+   <option value="{{ request.path_info }}" selected disabled>{% trans 'Menu' %}</option>
+  <option value="/action/">{% trans 'Action' %}</option>
+      <option value="/about/">{% trans 'About us'%}</option>
+  <option value="/contacts/">{% trans 'Contacts' %}</option>
+
+</select>
+    <div id="logo_shop">
+  <a href="/" class="logo">
+  <img src="{% static 'img/logo.jpeg' %}" alt="My shop">
+      <h3>My shop</h3>
+</a>
+    </div>
+
+
+
+<div id="lang_div">
+<form action="{% url 'set_language' %}" method="post" action="/i18n/setlang/" charset="utf-8">
+    {% csrf_token %}
+    <input name="next" type="hidden" value="{{ redirect_to }}">
+    <select name="language" onchange="this.form.submit()">
+        {% get_current_language as LANGUAGE_CODE %}
+        {% get_available_languages as LANGUAGES %}
+        {% get_language_info_list for LANGUAGES as languages %}
+        {% for language in languages %}
+            <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                {{ language.name_local }} ({{ language.code }})
+            </option>
+        {% endfor %}
+    </select>
+</form>
+</div>
+    <div id="search_div">
+     <form class="form-inline my-2 my-1g-b" action="{% url 'web:product_list' %}">
+        <input class="form-control nr-sm-2" type="search" aria-label="Search" name="search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">{% trans 'Search' %}</button>
+    </form>
+    </div>
+ {% if user.is_authenticated %}
+  <select onchange="location = this.value;">
+   <option value="{{ request.path_info }}" selected disabled>{{ user.username }}</option>
+  <option value="{% url 'orders:order_history' %}">{% trans 'Order history' %}</option>
+      <option value="{% url 'accounts:password_change' %}">{% trans 'Change password' %}</option>
+  <option value="{% url 'logout' %}">{% trans 'Go out' %}</option>
+
+</select>
+{% else %}
+  <select onchange="location = this.value;">
+      <option value="{{ request.path_info }}" selected disabled>{% trans 'Log in' %}</option>
+    <option value="/accounts/">{% trans 'Registration' %}</option>
+    <option value="/accounts/login/">{% trans 'Log in' %}</option>
+  </select>
+{% endif %}
+</div>
+<div id="subheader">
+    <div class="cart">
+        {% with total_items=cart|length %}
+        {% if cart|length > 0 %}
+        {% trans 'In the shopping cart: ' %}
+        <a href="{% url 'cart:cart_detail' %}">
+            {{ total_items }} {% trans 'qt, for the amount fo ' %} {{ cart.get_total_price }} {% trans 'uah' %}</a>
+        {% else %}
+        {% trans 'The cart is empty' %}
+        {% endif %}
+        {% endwith %}
+        </div>
+</div>
+<div id="sup_content">
+<div id="content">
+{% block content %}{% endblock %}
+</div>
+</div>
+
+<div id="footer">
+    <p>Created in Ukraine 2023 ©  <a href="https://github.com/RudychukDmytro/shop_Django.git"> Repository </a></p>
+</div>
+</body>
+</html>
+<script>
