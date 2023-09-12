@@ -1,0 +1,393 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-31 17:31+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
+"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
+"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
+"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#: accounts/templates/login.html:10 accounts/templates/login.html:31
+msgid "Login in"
+msgstr "Вхід на сайт"
+
+#: accounts/templates/login.html:12
+msgid "You don't know the password?"
+msgstr "Не знаєш пароль?"
+
+#: accounts/templates/login.html:12 accounts/templates/password_change.html:10
+#: accounts/templates/password_change.html:26
+#: accounts/templates/res_pass_conf.html:10 web/templates/shop/base.html:54
+msgid "Change password"
+msgstr "Змінити пароль"
+
+#: accounts/templates/login.html:14 accounts/templates/registration.html:12
+#: accounts/templates/registration.html:31 web/templates/shop/base.html:61
+msgid "Registration"
+msgstr "Реєстрація"
+
+#: accounts/templates/registration.html:14
+msgid "You have an account?"
+msgstr "Вже реєструвались?"
+
+#: accounts/templates/registration.html:14 web/templates/shop/base.html:60
+#: web/templates/shop/base.html:62
+msgid "Log in"
+msgstr "Вхід"
+
+#: cart/templates/cart/detail.html:5 cart/templates/cart/detail.html:8
+#: web/templates/shop/product/list.html:12
+#: web/templates/shop/product/list.html:22
+msgid "All products"
+msgstr "Всі товари"
+
+#: cart/templates/cart/detail.html:12
+msgid "Image"
+msgstr "Зображення"
+
+#: cart/templates/cart/detail.html:13
+msgid "Name"
+msgstr "Назва"
+
+#: cart/templates/cart/detail.html:14
+msgid "Update quantity"
+msgstr "Оновити кількість"
+
+#: cart/templates/cart/detail.html:15 cart/templates/cart/detail.html:40
+msgid "Remove"
+msgstr "Видалити"
+
+#: cart/templates/cart/detail.html:16
+msgid "Quantity"
+msgstr "Кількість"
+
+#: cart/templates/cart/detail.html:17
+msgid "Price for"
+msgstr "Ціна за"
+
+#: cart/templates/cart/detail.html:18
+msgid "Unit"
+msgstr "Одиниця виміру"
+
+#: cart/templates/cart/detail.html:19
+msgid "The total cost"
+msgstr "Загальна вартість"
+
+#: cart/templates/cart/detail.html:36
+msgid "Update"
+msgstr "Оновити"
+
+#: cart/templates/cart/detail.html:44 cart/templates/cart/detail.html:56
+#: cart/templates/cart/detail.html:63 orders/templates/create_order.html:25
+#: orders/templates/create_order.html:29 orders/templates/order_detail.html:8
+#: orders/templates/order_detail.html:23 orders/templates/order_history.html:12
+#: web/templates/shop/base.html:72
+msgid "uah"
+msgstr "грн"
+
+#: cart/templates/cart/detail.html:48 orders/templates/create_order.html:18
+#: orders/templates/order_detail.html:16
+#: web/templates/shop/product/detail.html:17
+#: web/templates/shop/product/list.html:36
+msgid "kg"
+msgstr "кг"
+
+#: cart/templates/cart/detail.html:50 orders/templates/create_order.html:20
+#: orders/templates/order_detail.html:18
+#: web/templates/shop/product/detail.html:19
+#: web/templates/shop/product/list.html:38
+msgid "g"
+msgstr "г"
+
+#: cart/templates/cart/detail.html:52 orders/templates/create_order.html:22
+#: orders/templates/order_detail.html:20
+#: web/templates/shop/product/detail.html:21
+#: web/templates/shop/product/list.html:40
+msgid "pcs"
+msgstr "од"
+
+#: cart/templates/cart/detail.html:61 orders/templates/create_order.html:29
+#: orders/templates/order_detail.html:8 orders/templates/order_history.html:12
+msgid "Total"
+msgstr "Разом"
+
+#: cart/templates/cart/detail.html:68
+msgid "To the store"
+msgstr "В магазин"
+
+#: cart/templates/cart/detail.html:69
+msgid "To order"
+msgstr "Оформити замовлення"
+
+#: orders/templates/create_order.html:6 orders/templates/create_order.html:9
+msgid "Design"
+msgstr "Оформлення"
+
+#: orders/templates/create_order.html:11 orders/templates/order_detail.html:9
+msgid "List"
+msgstr "Перелік"
+
+#: orders/templates/created_order.html:5 orders/templates/created_order.html:8
+msgid "Done"
+msgstr "Готово"
+
+#: orders/templates/created_order.html:9
+msgid "Your order has been successfully completed. Your order number is"
+msgstr "Ваше замовлення успішно сформовано. Номер Вашого замовлення "
+
+#: orders/templates/order_detail.html:6 orders/templates/order_history.html:12
+msgid "Check"
+msgstr "Замовлення"
+
+#: orders/templates/order_detail.html:7
+msgid "Date"
+msgstr "Дата"
+
+#: orders/templates/order_history.html:6 web/templates/shop/base.html:53
+msgid "Order history"
+msgstr "Історія замовлень"
+
+#: shop/settings.py:142
+msgid "Ukraine"
+msgstr "Українська"
+
+#: shop/settings.py:143
+msgid "English"
+msgstr "English"
+
+#: shop/settings.py:144
+msgid "Russian"
+msgstr "Русский"
+
+#: web/models.py:12
+#, fuzzy
+#| msgid "Category"
+msgid "category"
+msgstr "Категорія"
+
+#: web/models.py:13
+#, fuzzy
+#| msgid "Category"
+msgid "Categories"
+msgstr "Категорія"
+
+#: web/models.py:27
+msgid "name"
+msgstr "Назва"
+
+#: web/models.py:28
+msgid "slug"
+msgstr "Слаг"
+
+#: web/models.py:29
+#, fuzzy
+#| msgid "Image"
+msgid "image"
+msgstr "Зображення"
+
+#: web/models.py:30
+#, fuzzy
+#| msgid "Registration"
+msgid "description"
+msgstr "Реєстрація"
+
+#: web/models.py:31
+msgid "price"
+msgstr "Ціна"
+
+#: web/models.py:32
+#, fuzzy
+#| msgid "weight_unit"
+msgid "weight"
+msgstr "Вага"
+
+#: web/models.py:37
+msgid "weight_unit"
+msgstr "Одиниця виміру"
+
+#: web/models.py:38
+msgid "available"
+msgstr "Наявність"
+
+#: web/models.py:39
+msgid "created"
+msgstr "Створено"
+
+#: web/models.py:40
+msgid "uploaded"
+msgstr "Оновлено"
+
+#: web/models.py:44
+#, fuzzy
+#| msgid "All products"
+msgid "product"
+msgstr "Всі товари"
+
+#: web/models.py:45
+#, fuzzy
+#| msgid "All products"
+msgid "Products"
+msgstr "Всі товари"
+
+#: web/templates/shop/base.html:13
+msgid "Menu"
+msgstr "Меню"
+
+#: web/templates/shop/base.html:14
+msgid "Action"
+msgstr "Акції"
+
+#: web/templates/shop/base.html:15 web/templates/shop/product/about.html:5
+msgid "About us"
+msgstr "Про нас"
+
+#: web/templates/shop/base.html:16 web/templates/shop/product/contacts.html:5
+msgid "Contacts"
+msgstr "Контакти"
+
+#: web/templates/shop/base.html:47
+msgid "Search"
+msgstr "Пошук"
+
+#: web/templates/shop/base.html:55
+msgid "Go out"
+msgstr "Вийти"
+
+#: web/templates/shop/base.html:70
+msgid "In the shopping cart: "
+msgstr "В кошику товарів: "
+
+#: web/templates/shop/base.html:72
+msgid "qt, for the amount fo "
+msgstr "од, на суму: "
+
+#: web/templates/shop/base.html:74
+msgid "The cart is empty"
+msgstr "Кошик порожній"
+
+#: web/templates/shop/product/about.html:20
+msgid "Information about us"
+msgstr "Інформація про нас"
+
+#: web/templates/shop/product/about.html:33
+msgid "Our address"
+msgstr "Наша адреса"
+
+#: web/templates/shop/product/about.html:34
+msgid "Khmelnytsky city"
+msgstr "МІсто Хмельницький"
+
+#: web/templates/shop/product/about.html:35
+msgid "central street, building 18 b"
+msgstr "вулиця Центральна, буд. 18 б"
+
+#: web/templates/shop/product/about.html:38
+msgid "Work schedule"
+msgstr "Графік роботи"
+
+#: web/templates/shop/product/about.html:39
+msgid " Monday - Friday"
+msgstr " понеділок - п'ятниця"
+
+#: web/templates/shop/product/about.html:40
+msgid " Saturday"
+msgstr " субота"
+
+#: web/templates/shop/product/about.html:41
+msgid "closed Sunday and public holidays"
+msgstr "вихідний неділя та святкові дні"
+
+#: web/templates/shop/product/contacts.html:21
+#: web/templates/shop/product/contacts.html:28
+#: web/templates/shop/product/contacts.html:35
+#: web/templates/shop/product/contacts.html:42
+#: web/templates/shop/product/contacts.html:49
+msgid "Department"
+msgstr "Відділ"
+
+#: web/templates/shop/product/contacts.html:21
+msgid "wholesale"
+msgstr " оптового збуту"
+
+#: web/templates/shop/product/contacts.html:22
+#: web/templates/shop/product/contacts.html:29
+#: web/templates/shop/product/contacts.html:36
+#: web/templates/shop/product/contacts.html:43
+#: web/templates/shop/product/contacts.html:50
+#: web/templates/shop/product/contacts.html:57
+msgid "Phone"
+msgstr "Телефон"
+
+#: web/templates/shop/product/contacts.html:28
+msgid "retail sales"
+msgstr " роздрібного збуту"
+
+#: web/templates/shop/product/contacts.html:35
+msgid "quality control"
+msgstr "контролю якості"
+
+#: web/templates/shop/product/contacts.html:42
+msgid "procurement"
+msgstr " закупівель"
+
+#: web/templates/shop/product/contacts.html:49
+msgid "logistic"
+msgstr "логістики"
+
+#: web/templates/shop/product/contacts.html:56
+#, fuzzy
+#| msgid "director"
+msgid "Director"
+msgstr "Керівник"
+
+#: web/templates/shop/product/detail.html:17
+#: web/templates/shop/product/detail.html:19
+#: web/templates/shop/product/detail.html:21
+#: web/templates/shop/product/list.html:34
+msgid "UAH for"
+msgstr "грн за"
+
+#: web/templates/shop/product/detail.html:27
+msgid "Add to cart"
+msgstr "В кошик"
+
+#: web/templates/shop/product/list.html:9
+msgid "Category"
+msgstr "Категорія"
+
+#, fuzzy
+#~| msgid "To order"
+#~ msgid "Your order"
+#~ msgstr "Оформити замовлення"
+
+#, fuzzy
+#~| msgid "Order history"
+#~ msgid "Detail"
+#~ msgstr "Історія замовлень"
+
+#, fuzzy
+#~| msgid "Order history"
+#~ msgid "Orders"
+#~ msgstr "Історія замовлень"
+
+#, fuzzy
+#~| msgid "Order history"
+#~ msgid "Order"
+#~ msgstr "Історія замовлень"
+
+#~ msgid "Chosen"
+#~ msgstr "Вибране"

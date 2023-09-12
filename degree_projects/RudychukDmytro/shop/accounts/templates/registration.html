@@ -1,0 +1,38 @@
+{% extends "shop/base.html" %}
+{% load static %}
+{% load i18n %}
+
+
+{% block content %}
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="text-center">{% trans 'Registration' %}</h3>
+          <hr>
+          {% trans 'You have an account?' %} <a href="/accounts/login/">{% trans 'Log in' %}</a>
+          <hr>
+        </div>
+        <div class="card-body">
+          <form method="post">
+            {% csrf_token %}
+            {% for field in form %}
+              <div class="form-group">
+                <label for="{{ field.id_for_label }}">{{ field.label }} </label>
+                {{ field }}
+              </div>
+              {% if field.help_text %}
+                <div class="form-text text-muted">
+                  {{ field.help_text }}
+                </div>
+              {% endif %}
+            {% endfor %}
+            <button class="btn btn-primary btn-block mt-4" type="submit">{% trans 'Registration' %}</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,71 @@
+{% extends "shop/base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block title %} {% trans 'All products' %} {% endblock %}
+
+{% block content %}
+  <h1> {% trans 'All products' %} </h1>
+  <table class="cart">
+    <thead>
+      <tr>
+        <th>{% trans 'Image' %}</th>
+        <th>{% trans 'Name' %}</th>
+        <th>{% trans 'Update quantity' %}</th>
+        <th>{% trans 'Remove' %}</th>
+        <th>{% trans 'Quantity' %}</th>
+        <th>{% trans 'Price for' %}</th>
+        <th>{% trans 'Unit' %}</th>
+        <th>{% trans 'The total cost' %}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in cart %}
+        {% with product=item.product %}
+          <tr>
+            <td>
+              <a href="{{ product.get_absolute_url }}">
+                <img src="{% if product.image %}{{ product.image.url }}{% else %}{% static 'img/no_image.png' %}{% endif %}">
+              </a>
+            </td>
+            <td>{{ product.name }}</td>
+            <td>
+              <form action="{% url 'cart:cart_add' product.id %}" method="post">
+                {{ item.update_quantity_form.quantity }}
+                {{ item.update_quantity_form.update }}
+                <input type="submit" value="{% trans 'Update' %}">
+                {% csrf_token %}
+              </form>
+            </td>
+            <td><a href="{% url 'cart:cart_remove' product.id %}">{% trans 'Remove' %}</a></td>
+            <td>
+              {{ item.quantity }}
+            </td>
+            <td class="num">{{ item.price }} {% trans 'uah' %}</td>
+            <th class="num">
+              <p class="price">
+                  {% if product.weight_unit == "kg" %}
+                      {% trans 'kg' %}
+                  {% elif product.weight_unit == "g" %}
+                      {% trans 'g' %}
+                  {% elif product.weight_unit == "pcs" %}
+                      {% trans 'pcs' %}
+    {% endif %}
+</p>
+            </th>
+            <td class="num">{{ item.total_price }} {% trans 'uah' %}</td>
+          </tr>
+        {% endwith %}
+      {% endfor %}
+      <tr class="total">
+        <td>{% trans 'Total' %}</td>
+        <td colspan="4"></td>
+        <td class="num">{{ cart.get_total_price }} {% trans 'uah' %}</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="text-right">
+    <a href="{% url 'shop:product_list' %}" class="button light">{% trans 'To the store' %}</a>
+    <a href="{% url 'orders:order_create' %}" class="button">{% trans 'To order' %}</a>
+  </p>
+{% endblock %}
