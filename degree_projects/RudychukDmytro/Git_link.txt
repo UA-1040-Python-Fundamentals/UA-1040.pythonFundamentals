@@ -1,0 +1,1 @@
+https://github.com/RudychukDmytro/shop_Django.git

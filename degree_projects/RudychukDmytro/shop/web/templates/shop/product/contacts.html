@@ -1,0 +1,80 @@
+{% extends "shop/base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}
+{% trans 'Contacts' %}
+{% endblock %}
+{% block content %}
+    <style>
+        .contact-block {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            display: none;
+        }
+    </style>
+    <div class="slider">
+        <div class="contact-block" id="wholesale-block">
+            <hr>
+            <h2>{% trans 'Department'%} {% trans 'wholesale' %}</h2>
+            <p>{% trans 'Phone' %}: +380123456789</p>
+            <p>Email: wholesale@example.com</p>
+            <hr>
+        </div>
+        <div class="contact-block" id="sales-block">
+            <hr>
+            <h2>{% trans 'Department'%} {% trans 'retail sales' %}</h2>
+            <p>{% trans 'Phone' %}: +380987654321</p>
+            <p>Email: sales@example.com</p>
+            <hr>
+        </div>
+        <div class="contact-block" id="sals-block">
+            <hr>
+            <h2>{% trans 'Department'%} {% trans 'quality control' %}</h2>
+            <p>{% trans 'Phone' %}: +380987654322</p>
+            <p>Email: good@example.com</p>
+            <hr>
+        </div>
+        <div class="contact-block" id="procurement-block">
+            <hr>
+            <h2>{% trans 'Department'%} {% trans 'procurement' %}</h2>
+            <p>{% trans 'Phone' %}: +380111223344</p>
+            <p>Email: procurement@example.com</p>
+            <hr>
+        </div>
+        <div class="contact-block" id="procurt-block">
+            <hr>
+            <h2>{% trans 'Department'%} {% trans 'logistic' %}</h2>
+            <p>{% trans 'Phone' %}: +380111223345</p>
+            <p>Email: transport@example.com</p>
+            <hr>
+        </div>
+        <div class="contact-block" id="ceo-block">
+            <hr>
+            <h2>{% trans 'Director' %}</h2>
+            <p>{% trans 'Phone' %}: +380555666777</p>
+            <p>Email: ceo@example.com</p>
+            <hr>
+        </div>
+    </div>
+
+    <script>
+        var contactBlocks = document.querySelectorAll('.contact-block');
+        var currentBlockIndex = 0;
+
+        function showNextBlock() {
+            contactBlocks[currentBlockIndex].style.display = 'none';
+            currentBlockIndex = (currentBlockIndex + 1) % contactBlocks.length;
+            contactBlocks[currentBlockIndex].style.display = 'block';
+        }
+
+        // Показуємо перший блок при завантаженні сторінки
+        contactBlocks[currentBlockIndex].style.display = 'block';
+
+        // Показуємо наступний блок кожні 5 секунд
+        setInterval(showNextBlock, 5000);
+    </script>
+{% endblock %}
+</html>
