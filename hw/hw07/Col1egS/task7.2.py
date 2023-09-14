@@ -18,3 +18,5 @@ elif choice == 3:
     print("Еhe area of the circle is", circle(r = int(input("Enter the radius of the circle: "))))
 else:
     print("Wrong shape selected")
+
+
