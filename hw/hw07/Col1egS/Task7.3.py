@@ -8,5 +8,3 @@ def f(word):
             d[i] = 1
     return d
 print(f("heLlo"))
-
-
