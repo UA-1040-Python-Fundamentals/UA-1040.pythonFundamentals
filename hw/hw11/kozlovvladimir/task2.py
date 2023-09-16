@@ -1,5 +1,6 @@
-def calculate_the_divide_of_two_numbers(a,b):
-        return a/b
+def calculate_the_divide_of_two_numbers(a, b):
+    return a / b
+
 
 try:
     a, b = map(int, input("Please enter number A and B: ").split(","))
