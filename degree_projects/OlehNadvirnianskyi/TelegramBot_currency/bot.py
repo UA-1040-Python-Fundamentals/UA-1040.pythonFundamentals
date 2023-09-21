@@ -53,7 +53,7 @@ def pick_pair(message):
     ''' This function offers the user to enter the amount of currency to exchange '''
     global pair
     if message.text == "👈🏼Back":
-        back_msg = bot.send_message(message.chat.id, "Ok, try again:)")
+        back_msg = bot.send_message(message.chat.id, "Сlick again to start again🥱")
         bot.register_next_step_handler(back_msg, start)
     else:
         pair = message.text
@@ -66,7 +66,7 @@ def select_amount(message):
      and then, depending on the type of exchange, runs the next function '''
     global amount, currency_type
     if message.text == "👈🏼Back":
-        back_msg = bot.send_message(message.chat.id, "Ok, try again:)")
+        back_msg = bot.send_message(message.chat.id, "Сlick again to start again🥱")
         bot.register_next_step_handler(back_msg, start)
     else:
         try:
@@ -90,7 +90,7 @@ def convert_currency(message):
     """This function converts the currency and returns a message with the result"""
     global pair, amount
     if message.text == "👈🏼Back":
-        back_msg = bot.send_message(message.chat.id, "Ok, try again:)")
+        back_msg = bot.send_message(message.chat.id, "Сlick again to start again🥱")
         bot.register_next_step_handler(back_msg, start)
     else:
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -110,7 +110,7 @@ def convert_crypto(message):
     """this function converts the crypto-currency and returns a message with the result"""
     global pair, amount
     if message.text == "👈🏼Back":
-        back_msg = bot.send_message(message.chat.id, "Ok, try again:)")
+        back_msg = bot.send_message(message.chat.id, "Сlick again to start again🥱")
         bot.register_next_step_handler(back_msg, start)
     else:
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
