@@ -46,36 +46,44 @@ def select_pair(message):
         bot.register_next_step_handler(bot_message_crypto, pick_pair)
     else:
         msg = bot.send_message(message.chat.id, "😱Wrong input,try again.😱")
-        bot.register_next_step_handler(msg, select_pair)
+        bot.register_next_step_handler(msg, start)
 
 
 def pick_pair(message):
     ''' This function offers the user to enter the amount of currency to exchange '''
     global pair
-    pair = message.text
-    msg = bot.send_message(message.chat.id, f"😎Your pair is {pair}.😎\n💵Enter the amount of currency:💵")
-    bot.register_next_step_handler(msg, select_amount)
+    if message.text == "👈🏼Back":
+        back_msg = bot.send_message(message.chat.id, "Ok, try again:)")
+        bot.register_next_step_handler(back_msg, start)
+    else:
+        pair = message.text
+        msg = bot.send_message(message.chat.id, f"😎Your pair is {pair}.😎\n💵Enter the amount of currency:💵")
+        bot.register_next_step_handler(msg, select_amount)
 
 
 def select_amount(message):
     ''' This function accepts the value of the amount of currency and checks it for an acceptable input format,
      and then, depending on the type of exchange, runs the next function '''
     global amount, currency_type
-    try:
-        amount = float(message.text.strip())
-    except ValueError:
-        bot.send_message(message.chat.id, "😱Wrong value, try again!😱")
-        bot.register_next_step_handler(message, select_amount)
-        return
-
-    if amount <= 0:
-        bot.send_message(message.chat.id, "😱Value is too small, try again!😱")
-        bot.register_next_step_handler(message, select_amount)
+    if message.text == "👈🏼Back":
+        back_msg = bot.send_message(message.chat.id, "Ok, try again:)")
+        bot.register_next_step_handler(back_msg, start)
     else:
-        if currency_type == "💵Currency💵":
-            convert_currency(message)
+        try:
+            amount = float(message.text.strip())
+        except ValueError:
+            bot.send_message(message.chat.id, "😱Wrong value, try again!😱")
+            bot.register_next_step_handler(message, select_amount)
+            return
+
+        if amount <= 0:
+            bot.send_message(message.chat.id, "😱Value is too small, try again!😱")
+            bot.register_next_step_handler(message, select_amount)
         else:
-            convert_crypto(message)
+            if currency_type == "💵Currency💵":
+                convert_currency(message)
+            else:
+                convert_crypto(message)
 
 
 def convert_currency(message):
@@ -83,7 +91,7 @@ def convert_currency(message):
     global pair, amount
     if message.text == "👈🏼Back":
         back_msg = bot.send_message(message.chat.id, "Ok, try again:)")
-        bot.register_next_step_handler(back_msg, pick_pair)
+        bot.register_next_step_handler(back_msg, start)
     else:
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         again_btn = types.KeyboardButton("🔁Again🔁")
@@ -103,7 +111,7 @@ def convert_crypto(message):
     global pair, amount
     if message.text == "👈🏼Back":
         back_msg = bot.send_message(message.chat.id, "Ok, try again:)")
-        bot.register_next_step_handler(back_msg, pick_pair)
+        bot.register_next_step_handler(back_msg, start)
     else:
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
         again_btn = types.KeyboardButton("🔁Again🔁")
