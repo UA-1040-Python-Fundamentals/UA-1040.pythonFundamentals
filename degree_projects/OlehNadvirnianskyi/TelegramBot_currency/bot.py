@@ -3,9 +3,9 @@ from binance.client import Client
 from currency_converter import CurrencyConverter
 from telebot import types
 
-bot = telebot.TeleBot("6680049545:AAFdB4KOy7I5F8T2pCBoL4oso_VnShPBPig")
-api_key = 'VQX5O7zfhlZJ0bH5mdkoPa117AwHeoQoMqBYoVszxRP9IBM06yYmcHz7f7mj7oAD'
-api_secret = 'S07reAL2ueSWKTPktN1riMpuTGw9sMg9PPqAkDHtKlEpZ1ZC73cWKpdVctedLNXr'
+bot = telebot.TeleBot("BOT TOKEN")
+api_key = 'CREYPTO key'
+api_secret = 'API crypto key'
 
 currency_btn = CurrencyConverter()
 client = Client(api_key, api_secret)
