@@ -1,0 +1,19 @@
+# Get input from the user
+
+'''PRACTICAL TASK
+
+WRITE A PROGRAM THAT WILL CALCULATE THE SUM, DIFFERENCE, PRODUCT, EXPONENTIATION ETC. OF TWO NUMBERS A AND B THAT THE PROGRAM READS FROM THE CONSOLE (DATA ENTERED BY THE USER) AND WILL OUTPUT APPROPRIATE RESULT:
+"A + B = "  ...
+"A - B = "   ...
+"A * B = "   ...
+"A / B = "   ...
+"A**B = "   ...
+"A//B = "   ...
+"A%B = "  ...'''
+a = float(input("Enter the first number (A): "))
+b = float(input("Enter the second number (B): "))
+
+# Calculate and display the results
+print("A + B =", a + b)
+print("A - B =", a - b)
+print("A * B =", a * b)
