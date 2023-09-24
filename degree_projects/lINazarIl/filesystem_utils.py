@@ -138,3 +138,10 @@ def delete_path(path):
         shutil.rmtree(path)
     elif os.path.isfile(path):
         os.remove(path)
+
+def create_dir(path, dirname):
+    if dirname:
+        try:
+            os.makedirs(os.path.join(path, dirname), exist_ok = True)
+        except:
+            pass

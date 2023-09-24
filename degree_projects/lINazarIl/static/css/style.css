@@ -1,32 +1,50 @@
-
 .navbar {
-    background-color: #333;
-    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
+    background-color: #333; /* Змініть колір фону на потрібний */
+    color: white; /* Змініть колір тексту на потрібний */
 }
 
 .path-menu,
-.upload-menu
-.create-dir{
-    display: inline-block;
-    margin-right: auto;
+.upload-menu,
+.create-dir {
+    display: flex;
+    align-items: center;
+}
+
+.path-menu button,
+.upload-menu button,
+upload-menu input,
+.create-dir button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #007bff; /* Змініть колір фону на потрібний */
+    color: white; /* Змініть колір тексту на потрібний */
+    border: none;
+    cursor: pointer;
+}
+
+.path-menu input[type="text"],
+.create-dir input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc; /* Змініть колір рамки на потрібний */
+}
+
+.upload-menu input[type="file"] {
+    margin-right: 10px;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 24px; /* Змініть розмір шрифту на потрібний */
+    font-weight: bold; /* Змініть жирність шрифту на потрібну */
 }
 
-.mode-switch__button {
-    display: inline-block;
-    width: 100px;
-    color: black;
-    background-color: #E9E9ED;
-    border-radius: 3px;
-    text-align: center;
-    border: solid;
-    border-width: 1px;
-    border-color: gray;
+.mode-switch__button img {
+    width: 24px; /* Змініть ширину картинки на потрібну */
+    height: auto;
+    margin-left: 10px;
 }
 
 /* Зображення-мініатюри */
