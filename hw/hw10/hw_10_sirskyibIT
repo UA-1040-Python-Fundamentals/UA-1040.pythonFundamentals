@@ -1,0 +1,136 @@
+# # Task 1
+
+class Polygon:
+
+    def __init__(self, name, color):
+        self.name = name
+        self.color = color
+
+    def get_area(self):
+        pass
+
+class Rectangle(Polygon):
+
+    def __init__(self, color):
+        super().__init__("rectangle", color)
+        self.a_side = float(input("Enter rectangle side a: "))
+        self.b_side = float(input("Enter rectangle side b: "))
+
+    def get_area(self):
+        self.area = self.a_side * self.b_side
+        return f"Square {self.color} {self.name}: {self.area}"
+
+class Triangle(Polygon):
+
+    def __init__(self, color):
+        super().__init__("triangle", color)
+        self.a_side = float(input("Enter triangle length of side a: "))
+        self.b_side = float(input("Enter triangle length of  side b: "))
+        self.c_side = float(input("Enter triangle length of  side c: "))
+
+    def get_area(self):
+        p = (self.a_side + self.b_side + self.c_side) / 2
+        if self.a_side + self.b_side <= self.c_side or self.a_side + self.c_side <= self.b_side or self.b_side + self.c_side <= self.a_side:
+            return "Wrong"
+        else:
+            self.area = round((p * (p - self.a_side) * (p - self.b_side) * (p - self.c_side)) ** 0.5, 2)
+            return f"Square {self.color} {self.name}: {self.area}"
+
+class Square(Polygon):
+
+    def __init__(self, color):
+        super().__init__("square", color)
+        self.a_side = float(input("Enter length of polygon square side a: "))
+
+    def get_area(self):
+        self.area = self.a_side * self.a_side
+        return f"Square {self.color} {self.name}: {self.area}"
+
+a = Rectangle('red')
+b1 = Triangle('blue')
+b2 = Triangle('blue')
+c = Square('black')
+
+print(a.get_area())
+print(b1.get_area())
+print(b2.get_area())
+print(c.get_area())
+
+
+print("The end!")
+
+
+
+
+
+
+    #  Task 2
+
+class Human:
+
+    def __init__(self, name):
+        self.name = name
+
+    def greeting(self):
+        return f"Greeting, {self.name}!"
+
+    def species(self):
+        return f"{self.name} is a member of the species Homosapiens"
+
+    @staticmethod
+    def message():
+        return "Добрий день, everybody!"
+
+
+person = Human("Bohdan")
+
+
+print(person.greeting())
+print(person.species())
+print(Human.message())
+
+
+
+
+
+# Task 3
+
+
+class Employees:
+
+    number_of_employees = 0
+    employees = []
+
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+        Employees.number_of_employees += 1
+        Employees.employees.append(f"Name: {self.name}, Salary: {self.salary}$")
+
+    @classmethod
+    def employee_create(cls):
+        name = input("Enter employee name: ")
+        salary = float(input("Enter employee salary: "))
+        return cls(name, salary)
+
+    def NumberOfEmployees():
+        return f"Number of employees: {Employees.number_of_employees}"
+
+    def AllEmpInfo():
+        return f"Employees info: {Employees.employees}"
+
+    def EmpInfo(self):
+        return f"Employee info: Name: {self.name}, Salary: {self.salary}$"
+
+
+employer1 = Employees.employee_create()
+employer2 = Employees.employee_create()
+employer3 = Employees.employee_create()
+
+
+print(employer1.EmpInfo())
+print(employer2.EmpInfo())
+print(employer3.EmpInfo())
+print(Employees.AllEmpInfo())
+print(Employees.NumberOfEmployees())
+
