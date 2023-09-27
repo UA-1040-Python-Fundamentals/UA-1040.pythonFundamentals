@@ -3,8 +3,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #333; /* Змініть колір фону на потрібний */
-    color: white; /* Змініть колір тексту на потрібний */
+    background-color: #676;
+    color: white;
 }
 
 .path-menu,
@@ -16,12 +16,12 @@
 
 .path-menu button,
 .upload-menu button,
-upload-menu input,
+.upload-menu input,
 .create-dir button {
     margin-left: 10px;
     padding: 5px 10px;
-    background-color: #007bff; /* Змініть колір фону на потрібний */
-    color: white; /* Змініть колір тексту на потрібний */
+    background-color: #454;
+    color: white;
     border: none;
     cursor: pointer;
 }
@@ -29,7 +29,7 @@ upload-menu input,
 .path-menu input[type="text"],
 .create-dir input[type="text"] {
     padding: 5px;
-    border: 1px solid #ccc; /* Змініть колір рамки на потрібний */
+    border: 1px solid #ccc;
 }
 
 .upload-menu input[type="file"] {
@@ -37,17 +37,17 @@ upload-menu input,
 }
 
 .logo {
-    font-size: 24px; /* Змініть розмір шрифту на потрібний */
-    font-weight: bold; /* Змініть жирність шрифту на потрібну */
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .mode-switch__button img {
-    width: 24px; /* Змініть ширину картинки на потрібну */
+    width: 24px;
     height: auto;
     margin-left: 10px;
 }
 
-/* Зображення-мініатюри */
+
 .items-thumbnails {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -83,7 +83,7 @@ upload-menu input,
     text-align: center;
 }
 
-/* Список елементів */
+
 items-list {
     margin-top: 20px;
     list-style: none;
@@ -106,11 +106,11 @@ items-list {
     color: #333;
     display: flex;
     align-items: center;
-    width: 100%; /* Заповнює всю доступну ширину */
+    width: 100%;
 }
 
 .items-list__details {
-    flex-grow: 1; /* Розтягує назву файлу та час створення на всю доступну ширину */
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     margin-left: 10px;
