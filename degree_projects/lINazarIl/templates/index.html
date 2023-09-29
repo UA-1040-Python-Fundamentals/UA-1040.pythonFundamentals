@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block content %}
+    <nav class="navbar">
+        <form action="/" method="GET" class="path-menu">
+            <button type="submit"> Back </button>
+            <input type="text" value={{ path_for_view }}>
+        </form>
+
+        <form action="{{ current_path }}?viewmode={{ viewmode }}" method="POST" class="upload-menu" enctype = "multipart/form-data">
+            <input required type="file" name = "file">
+            <button type="submit">Upload</button>
+        </form>
+
+        <form action="/create{{ current_path }}?viewmode={{ viewmode }}" method="POST" class="create-dir" enctype = "multipart/form-data">
+            <input type="text" name="dirname" placeholder="dirname">
+            <button type="submit">Create</button>
+         </form>
+
+        <span class="logo">LWFM</span>
+
+        {% if 'thumbnails' in viewmode %}
+        <a class="mode-switch__button" href={{ current_path }}?viewmode=list>
+            <img src="/static/pics/tmode.png" alt="">
+        </a>
+        {% endif %}
+        {% if 'list' in viewmode %}
+        <a class="mode-switch__button" href={{ current_path }}?viewmode=thumbnails>
+            <img src="/static/pics/lmode.png" alt="">
+        </a>
+        {% endif %}
+    </nav>
+    {% if 'thumbnails' in viewmode %}
+       <div class="items-thumbnails">
+        {% for element in itemlist %}
+            <a href=/{{ element['path'] }}?viewmode={{ viewmode }} class="element-thumbnail">
+                <img src="/{{ element['thumbnail'] }}" alt="thumbnail">
+                <span class="element-thumbnail__name">{{ element['name'] }}</span>
+            </a>
+        {% endfor %}
+        </div>
+    {% endif %}
+    {% if 'list' in viewmode %}
+        <div class="items-list">
+            {% for element in itemlist %}
+                <div class="items-list__item">
+                    <a class="items-list__link" href=/{{ element['path'] }}?viewmode={{ viewmode }}>
+                        <img src="/{{ element['thumbnail'] }}" alt="thumbnail" width="140" height="80">
+                        <div class="items-list__details">
+                            <span class="items-list__filename">{{ element['name'] }}</span>
+                            <span class="items-list__maketime">{{ element['mtime'] }}</span>
+                            <span class="items-list__filesize">{{ element['filesize'] }}</span>
+                        </div>
+                        <form action="/delete/{{ element['path'] }}?viewmode={{ viewmode }}" method="POST" class="delete-form">
+                            <button type="submit">Delete</button>
+                        </form>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+	</div>
+    {% endif %}
+{% endblock %}

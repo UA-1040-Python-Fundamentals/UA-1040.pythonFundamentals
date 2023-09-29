@@ -1,0 +1,126 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #676;
+    color: white;
+}
+
+.path-menu,
+.upload-menu,
+.create-dir {
+    display: flex;
+    align-items: center;
+}
+
+.path-menu button,
+.upload-menu button,
+.upload-menu input,
+.create-dir button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #454;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.path-menu input[type="text"],
+.create-dir input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.upload-menu input[type="file"] {
+    margin-right: 10px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.mode-switch__button img {
+    width: 24px;
+    height: auto;
+    margin-left: 10px;
+}
+
+
+.items-thumbnails {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    max-width: 85%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.element-thumbnail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: ;
+    text-decoration: none;
+    color: #333;
+}
+
+.element-thumbnail:hover {
+    background-color: #C8C8C8;
+}
+
+.element-thumbnail img {
+    max-width: 100px;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.element-thumbnail__name {
+    min-height: 40px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+items-list {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.items-list__item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.items-list__item:hover {
+    background-color: #C8C8C8;
+}
+
+.items-list__link {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.items-list__details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.items-list__filename {
+    font-weight: bold;
+}
+
+.items-list__maketime,
+.items-list__filesize {
+    color: #777;
+}
