@@ -53,7 +53,7 @@ def localList(path):
                 'name': i,
                 'type': 'file',
                 'filesize': sizeof_fmt(filestat.st_size),
-                'mtime': time.strftime("%d.%m.%Y %H:%M", time.gmtime(filestat.st_mtime)),
+                'mtime': time.strftime("%d.%m.%Y %H:%M", time.localtime(filestat.st_mtime)),
                 'thumbnail': get_thumbnail(os.path.join(path, i)),
                 'path': urllib.parse.quote(web_path)
             }
@@ -129,8 +129,10 @@ def get_thumbnail(path):
         except IOError:
             pass
 
-    else:
-        return None
+    if fileextension == '.pdf':
+        return os.path.join('static', 'pics', 'pdf_thumbnail.png')
+
+    return os.path.join('static', 'pics', 'file_thumbnail.png')
 
 def delete_path(path):
     path = path.lstrip('/')

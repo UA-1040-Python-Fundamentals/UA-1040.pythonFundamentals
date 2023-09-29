@@ -38,6 +38,7 @@ def action(path):
     viewmode = 'thumbnails'
     if 'viewmode' in request.args and viewmode in ['thumbnails', 'list']:
         viewmode = request.args['viewmode']
+
     current_path = webstyle_path(os.path.join(os.sep, BASE_PATH, path))
     path_for_view = current_path
     current_path = urllib.parse.quote(current_path)
