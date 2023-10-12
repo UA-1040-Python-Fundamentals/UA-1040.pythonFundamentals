@@ -30,13 +30,12 @@ def payment():
         if cart_sum == 0:
             print("Спочатку додайте товари то кошика.")
         else:
-            print(f"До сплати: {cart_sum}")
             pay_choice = int(input("Оберіть метод оплати:\n"
                                    "1 - Оплата при отриманні\n"
                                    "2 - Оплатити онлайн\n"))
 
             if pay_choice == 1:
-                print("Добре, очікуйте на доставку!")
+                pass
             elif pay_choice == 2:
                 print("Будь ласка, введіть дані вашої картки.")
                 while True:
@@ -45,6 +44,7 @@ def payment():
                         if len(card_number) != 16:
                             print("Ви ввели неправильну кількість цифр. Будь ласка, введіть 16 цифр.")
                         else:
+                            card_number = int(card_number)
                             break
                     except ValueError:
                         print("Помилка вводу. Будь ласка, введіть ціле число.")
@@ -63,10 +63,11 @@ def payment():
                         if len(card_cvv) != 3:
                             print("Ви ввели неправильну кількість цифр. Будь ласка, введіть 3 цифри.")
                         else:
+                            card_cvv = int(card_cvv)
                             break
                     except ValueError:
                         print("Помилка вводу. Будь ласка, введіть ціле число.")
-                print("Оплачено! Очікуйте на доставку!")
+
             else:
                 print("Невірне значення.")
     finally:
@@ -175,10 +176,8 @@ print("Вітаємо у нашому риболовному магазині \"
 print("Давайте пройдемо реєстрацію")
 
 while True:
-    name = input("Введіть своє прізвище та ім'я: ")
-    if not name.isalpha():
-        print("Помилка вводу. Будь ласка, спробуйте ще раз.")
-    elif len(name) < 10:
+    name = input("Введіть ПІБ: ")
+    if len(name) < 10:
         print("Ви ввели замало символів. Будь ласка, спробуйте ще раз.")
     else:
         break
@@ -186,10 +185,10 @@ while True:
 while True:
     try:
         number = input("Введіть Ваш номер телефону: ")
-        number_str = str(number)
-        if len(number_str) != 10:
+        if len(number) != 10:
             print("Ви ввели неправильну кількість цифр. Будь ласка, введіть 10 цифр.")
         else:
+            number = int(number)
             break
     except ValueError:
         print("Помилка вводу. Будь ласка, введіть ціле число.")
@@ -327,22 +326,32 @@ while True:
             print("Наш магазин знаходиться в Києві за адресою: Сагайдачного вул., 51.")
             print("Графік роботи: Пн-Пт - 10:00-18:00")
             payment()
+            print("Чекаємо на вас!")
 
         elif delivery_choice == 2:
             delivery_address = input("Введіть адресу доставки: ")
-            delivery_time = int(input("О котрій годині завтра вам буде зручно отримати замовлення?"))
+            delivery_time = int(input("О котрій годині завтра вам буде зручно отримати замовлення?\n"))
             print(f"{name}, очійкуйте нашого кур'єра завтра близько {delivery_time} години")
+            final_sum = cart_sum + 100
+            print(f"До сплати: {final_sum}")
             payment()
+            print("Очікуйте на доставку!")
 
         elif delivery_choice == 3:
             department = input("Введіть номер відділення: ")
             print(f"{name}, очікуйте ваше замовлення в {department} відділенні!")
+            final_sum = cart_sum + 80
+            print(f"До сплати: {final_sum}")
             payment()
+            print("Очікуйте на доставку!")
 
         elif delivery_choice == 4:
             department = input("Введіть номер відділення: ")
             print(f"{name}, очікуйте ваше замовлення в {department} відділенні!")
+            final_sum = cart_sum + 50
+            print(f"До сплати: {final_sum}")
             payment()
+            print("Очікуйте на доставку!")
 
         else:
             print("Невірне значення.")
