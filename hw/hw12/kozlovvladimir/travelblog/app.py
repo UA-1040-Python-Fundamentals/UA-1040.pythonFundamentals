@@ -9,6 +9,7 @@ def get_db_connection():
     return conn
 
 
+
 def get_post(post_id):
     conn = get_db_connection()
     post = conn.execute('SELECT * FROM posts WHERE id = ?',
@@ -88,6 +89,7 @@ def delete(id):
     conn.close()
     flash('"{}" was successfully deleted!'.format(post['title']))
     return redirect(url_for('index'))
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=5001)
